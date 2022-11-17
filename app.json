@@ -4,10 +4,10 @@
     "slug": "ROI_Staff_Directory",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/icon.png",
+    "icon": "./assets/ROIicon.png",
     "userInterfaceStyle": "light",
     "splash": {
-      "image": "./assets/splash.png",
+      "image": "./assets/ROIsplash.png",
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
