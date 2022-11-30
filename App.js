@@ -28,10 +28,10 @@ const Stack = createNativeStackNavigator();
     return (
       <NavigationContainer theme={MyTheme}>
         <Stack.Navigator>
-          <Stack.Screen name="Home" component={DirectoryScreen} />
-          <Stack.Screen name="Details" component={DetailsScreen} />
-          <Stack.Screen name="Settings" component={SettingsScreen} />
-          <Stack.Screen name="Add" component={AddScreen} />
+          <Stack.Screen name="Home" component={DirectoryScreen} options={{orientation: 'all'}}/>
+          <Stack.Screen name="Details" component={DetailsScreen} options={{orientation: 'all'}}/>
+          <Stack.Screen name="Settings" component={SettingsScreen} options={{orientation: 'all'}}/>
+          <Stack.Screen name="Add" component={AddScreen} options={{orientation: 'all'}}/>
         </Stack.Navigator>
       </NavigationContainer>
     );
