@@ -1,4 +1,5 @@
 import * as React from 'react';
+import data from './assets/json/data';
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
 import { NavigationContainer, StackActions } from '@react-navigation/native';
@@ -10,8 +11,8 @@ import EditScreen from './assets/pages/EditScreen';
 import AddScreen from './assets/pages/AddScreen';
 import Footer from './assets/components/Footer';
 
-const Stack = createNativeStackNavigator();
 
+const Stack = createNativeStackNavigator();
   
   function App() {
     const [fontsLoaded] = useFonts({'Trebuchet': require('./assets/fonts/trebuc.ttf')})
