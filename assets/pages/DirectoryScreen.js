@@ -22,7 +22,7 @@ export default function Directory({ navigation }) {
             .then(response => response.json())
             .then(data => setMyItems(data))
             .catch(error => console.log("Failed to load data. \n") + error)
-            .finally(() => {setIsDataLoaded(true);console.log("performed load")})
+            .finally(() => {setIsDataLoaded(true);})
     }
     useEffect(() => {
         const focusHandler = navigation.addListener('focus', () => {
