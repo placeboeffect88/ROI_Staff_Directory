@@ -1,27 +1,36 @@
 import * as React from 'react';
-import data from './assets/json/data';
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
-import { NavigationContainer, StackActions } from '@react-navigation/native';
+import { NavigationContainer, StackActions, DefaultTheme } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import { useFonts } from 'expo-font';
 import DirectoryScreen from './assets/pages/DirectoryScreen';
 import DetailsScreen from './assets/pages/DetailsScreen';
-import EditScreen from './assets/pages/EditScreen';
+import SettingsScreen from './assets/pages/SettingsScreen';
 import AddScreen from './assets/pages/AddScreen';
-import Footer from './assets/components/Footer';
 
+const MyTheme = {
+  dark: false,
+  colors: {
+    primary: 'rgb(0, 0, 0)',
+    background: 'rgb(0, 0, 0)',
+    card: 'rgb(38, 38, 38)',
+    text: 'rgb(255, 255, 255)',
+    border: 'rgb(148, 26, 29)',
+    notification: 'rgb(0, 0, 0)',
+  },
+};
 
 const Stack = createNativeStackNavigator();
   
   function App() {
     const [fontsLoaded] = useFonts({'Trebuchet': require('./assets/fonts/trebuc.ttf')})
     return (
-      <NavigationContainer>
+      <NavigationContainer theme={MyTheme}>
         <Stack.Navigator>
           <Stack.Screen name="Home" component={DirectoryScreen} />
           <Stack.Screen name="Details" component={DetailsScreen} />
-          <Stack.Screen name="Edit" component={EditScreen} />
+          <Stack.Screen name="Settings" component={SettingsScreen} />
           <Stack.Screen name="Add" component={AddScreen} />
         </Stack.Navigator>
       </NavigationContainer>

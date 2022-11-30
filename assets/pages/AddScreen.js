@@ -1,7 +1,6 @@
 import { StatusBar } from 'expo-status-bar';
 import { useState } from 'react';
 import { StyleSheet, Text, TextInput, TouchableOpacity, ScrollView, View } from 'react-native';
-import { employee } from '../json/data';
 import { Dimensions } from 'react-native';
 import FontAwesome from "@expo/vector-icons/FontAwesome";
 
@@ -74,7 +73,7 @@ export default function AddScreen({ route, navigation }) {
             onChangeText={setCountry}
             value={countryState}></TextInput>
         <StatusBar style="auto"/>
-        <Text style={styles.titleTextCenter}>Update Employee</Text>
+        <Text style={styles.titleTextCenter}>Add Employee</Text>
         <TouchableOpacity 
             style={styles.circleButton}
             onPress={() => Save()}>

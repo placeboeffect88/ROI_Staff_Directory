@@ -2,7 +2,6 @@ import { StatusBar } from 'expo-status-bar';
 import { useState } from 'react';
 import { StyleSheet, Text, TextInput, TouchableOpacity, ScrollView, View, Alert } from 'react-native';
 import { Dimensions } from 'react-native';
-import { employee } from '../json/data';
 import FontAwesome from "@expo/vector-icons/FontAwesome";
 
 export default function DetailsScreen({ route, navigation }) {

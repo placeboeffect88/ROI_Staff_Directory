@@ -1,9 +1,7 @@
 import { StatusBar } from 'expo-status-bar';
 import { Button, FlatList, StyleSheet, Text, TouchableOpacity, View } from 'react-native';
 import { Dimensions } from 'react-native';
-import { employee } from '../json/data';
 import FontAwesome from "@expo/vector-icons/FontAwesome";
-import Footer from '../components/Footer';
 import { useIsFocused } from '@react-navigation/native';
 import { useState, useEffect } from 'react';
 
@@ -82,7 +80,7 @@ export default function Directory({ navigation }) {
         });
     }
     function onPressHandlerSettings() {
-        //navigation.navigate()
+        //navigation.navigate('Settings')
     }
 
     
