@@ -54,15 +54,14 @@ export default function Directory({ navigation }) {
                 size={50}
                 color='#ffffff'/>
         </TouchableOpacity>
-        <StatusBar style="auto"/>
-        <TouchableOpacity 
+        {/* <TouchableOpacity 
             style={styles.circleButtonLeft}
             onPress={() => onPressHandlerSettings()}>
             <FontAwesome
                 name="gear"
                 size={50}
                 color='#ffffff'/>
-        </TouchableOpacity>
+        </TouchableOpacity> */}
         <StatusBar style="auto"/>
       </View>
       
