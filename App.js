@@ -9,16 +9,7 @@ import DetailsScreen from './assets/pages/DetailsScreen';
 import SettingsScreen from './assets/pages/SettingsScreen';
 import AddScreen from './assets/pages/AddScreen';
 
-const MyTheme = {
-  dark: false,
-  colors: {
-    primary: 'rgb(0, 0, 0)',
-    background: 'rgb(0, 0, 0)',
-    card: 'rgb(38, 38, 38)',
-    text: 'rgb(255, 255, 255)',
-    border: 'rgb(148, 26, 29)',
-    notification: 'rgb(0, 0, 0)',
-  },
+
 };
 
 const Stack = createNativeStackNavigator();
